@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_WEEK1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_WEEK1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,9 +250,11 @@
                     <connections>
                         <outlet property="name" destination="jid-C9-9pj" id="H2f-m5-8Lu"/>
                         <outlet property="ok" destination="kv6-HK-5VU" id="HNA-9X-2KI"/>
+                        <segue destination="HXy-hg-gOh" kind="unwind" identifier="unwindToVC1" unwindAction="unwindVC1WithSegue:" id="G0S-Xg-yjE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7z-7H-9bf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HXy-hg-gOh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2738" y="84"/>
         </scene>

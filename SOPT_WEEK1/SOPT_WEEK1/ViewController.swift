@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var login: UIButton!
     
+    @IBAction func unwindVC1 (segue : UIStoryboardSegue) {}
+    
     @IBAction func toLogin(_ sender: UIButton) {
         if (email.text != "") && (password.text != "")
         {
