@@ -16,9 +16,9 @@ class JoinViewController: UIViewController {
     @IBAction func toLogin(_ sender: UIButton) {
         if (emailTF.text != "") && (pwTF.text != "") && (pwCorrectTF.text != "")
         {
-            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController else {return}
-            nextVC.nameFrom = emailTF.text!
-            self.present(nextVC, animated: true, completion: nil)
+            let nextVC = self.storyboard?.instantiateViewController(identifier: "MainTabBar") as! UITabBarController
+//            nextVC.nameFrom = emailTF.text!
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
         
     }

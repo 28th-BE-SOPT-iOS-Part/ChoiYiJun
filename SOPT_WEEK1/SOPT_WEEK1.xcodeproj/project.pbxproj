@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774E4AD92632FD0B00641784 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AD82632FD0B00641784 /* MessageViewController.swift */; };
+		774E4ADC2632FD1900641784 /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4ADB2632FD1900641784 /* HashViewController.swift */; };
+		774E4ADF2632FD4100641784 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4ADE2632FD4100641784 /* ShoppingViewController.swift */; };
+		774E4AE22632FD4D00641784 /* EtcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AE12632FD4D00641784 /* EtcViewController.swift */; };
+		774E4AE52632FE8C00641784 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AE42632FE8C00641784 /* ProfileViewController.swift */; };
+		774E4AE92632FF4B00641784 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AE82632FF4B00641784 /* UIColor.swift */; };
 		77924FF726203AD9001E8003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77924FF626203AD9001E8003 /* AppDelegate.swift */; };
 		77924FF926203AD9001E8003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77924FF826203AD9001E8003 /* SceneDelegate.swift */; };
 		77924FFB26203AD9001E8003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77924FFA26203AD9001E8003 /* ViewController.swift */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		774E4AD82632FD0B00641784 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		774E4ADB2632FD1900641784 /* HashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashViewController.swift; sourceTree = "<group>"; };
+		774E4ADE2632FD4100641784 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		774E4AE12632FD4D00641784 /* EtcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcViewController.swift; sourceTree = "<group>"; };
+		774E4AE42632FE8C00641784 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		774E4AE82632FF4B00641784 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		77924FF326203AD9001E8003 /* SOPT_WEEK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_WEEK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77924FF626203AD9001E8003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77924FF826203AD9001E8003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774E4AE72632FF3F00641784 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				774E4AE82632FF4B00641784 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		77924FEA26203AD9001E8003 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +80,7 @@
 		77924FF526203AD9001E8003 /* SOPT_WEEK1 */ = {
 			isa = PBXGroup;
 			children = (
+				774E4AE72632FF3F00641784 /* Extension */,
 				77924FF626203AD9001E8003 /* AppDelegate.swift */,
 				77924FF826203AD9001E8003 /* SceneDelegate.swift */,
 				77924FFA26203AD9001E8003 /* ViewController.swift */,
@@ -69,6 +90,11 @@
 				77924FFF26203ADB001E8003 /* Assets.xcassets */,
 				7792500126203ADB001E8003 /* LaunchScreen.storyboard */,
 				7792500426203ADB001E8003 /* Info.plist */,
+				774E4AD82632FD0B00641784 /* MessageViewController.swift */,
+				774E4ADB2632FD1900641784 /* HashViewController.swift */,
+				774E4ADE2632FD4100641784 /* ShoppingViewController.swift */,
+				774E4AE12632FD4D00641784 /* EtcViewController.swift */,
+				774E4AE42632FE8C00641784 /* ProfileViewController.swift */,
 			);
 			path = SOPT_WEEK1;
 			sourceTree = "<group>";
@@ -145,8 +171,14 @@
 			files = (
 				7792500C26204CE1001E8003 /* LoginViewController.swift in Sources */,
 				77924FFB26203AD9001E8003 /* ViewController.swift in Sources */,
+				774E4AE52632FE8C00641784 /* ProfileViewController.swift in Sources */,
+				774E4ADC2632FD1900641784 /* HashViewController.swift in Sources */,
+				774E4AE22632FD4D00641784 /* EtcViewController.swift in Sources */,
 				77924FF726203AD9001E8003 /* AppDelegate.swift in Sources */,
 				7792501026204D0D001E8003 /* JoinViewController.swift in Sources */,
+				774E4AE92632FF4B00641784 /* UIColor.swift in Sources */,
+				774E4AD92632FD0B00641784 /* MessageViewController.swift in Sources */,
+				774E4ADF2632FD4100641784 /* ShoppingViewController.swift in Sources */,
 				77924FF926203AD9001E8003 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

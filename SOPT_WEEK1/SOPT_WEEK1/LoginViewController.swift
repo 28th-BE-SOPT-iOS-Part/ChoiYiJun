@@ -9,22 +9,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var ok: UIButton!
-    
-    @IBAction func okDismiss(_ sender: UIButton) {
-//        self.dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "unwindToVC1", sender: self)
-//        self.navigationController?.popToRootViewController(animated: true)
-//        self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
-    }
-    
-    var nameFrom : String = ""
+    @IBOutlet weak var profilePic: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ok.layer.cornerRadius = 5
-        name.text = nameFrom + "님"
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        profilePic.isUserInteractionEnabled = true
+        profilePic.addGestureRecognizer(tapGestureRecognizer)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "ProfileViewController") as? ProfileViewController else {return}
+        nextVC.modalPresentationStyle = .overFullScreen
+        self.present(nextVC, animated: true, completion: nil)
     }
 
 }

@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     @IBAction func toLogin(_ sender: UIButton) {
         if (email.text != "") && (password.text != "")
         {
-            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController else {return}
-            nextVC.nameFrom = email.text!
-            self.present(nextVC, animated: true, completion: nil)
+            let nextVC = self.storyboard?.instantiateViewController(identifier: "MainTabBar") as! UITabBarController
+//            nextVC.nameFrom = emailTF.text!
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }
     
