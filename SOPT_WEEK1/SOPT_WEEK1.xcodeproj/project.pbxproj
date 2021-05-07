@@ -13,6 +13,12 @@
 		774E4AE22632FD4D00641784 /* EtcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AE12632FD4D00641784 /* EtcViewController.swift */; };
 		774E4AE52632FE8C00641784 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AE42632FE8C00641784 /* ProfileViewController.swift */; };
 		774E4AE92632FF4B00641784 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4AE82632FF4B00641784 /* UIColor.swift */; };
+		77551EE7264572C1003E8133 /* etcDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77551EE6264572C1003E8133 /* etcDataModel.swift */; };
+		77551EEC26457621003E8133 /* etcCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77551EEA26457621003E8133 /* etcCollectionViewCell.swift */; };
+		77551EED26457621003E8133 /* etcCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77551EEB26457621003E8133 /* etcCollectionViewCell.xib */; };
+		77551EF02645827E003E8133 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77551EEF2645827E003E8133 /* FriendDataModel.swift */; };
+		77551EF4264582CF003E8133 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77551EF2264582CF003E8133 /* FriendTableViewCell.swift */; };
+		77551EF5264582CF003E8133 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77551EF3264582CF003E8133 /* FriendTableViewCell.xib */; };
 		77924FF726203AD9001E8003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77924FF626203AD9001E8003 /* AppDelegate.swift */; };
 		77924FF926203AD9001E8003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77924FF826203AD9001E8003 /* SceneDelegate.swift */; };
 		77924FFB26203AD9001E8003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77924FFA26203AD9001E8003 /* ViewController.swift */; };
@@ -30,6 +36,12 @@
 		774E4AE12632FD4D00641784 /* EtcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcViewController.swift; sourceTree = "<group>"; };
 		774E4AE42632FE8C00641784 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		774E4AE82632FF4B00641784 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		77551EE6264572C1003E8133 /* etcDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etcDataModel.swift; sourceTree = "<group>"; };
+		77551EEA26457621003E8133 /* etcCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etcCollectionViewCell.swift; sourceTree = "<group>"; };
+		77551EEB26457621003E8133 /* etcCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = etcCollectionViewCell.xib; sourceTree = "<group>"; };
+		77551EEF2645827E003E8133 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
+		77551EF2264582CF003E8133 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		77551EF3264582CF003E8133 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		77924FF326203AD9001E8003 /* SOPT_WEEK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_WEEK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77924FF626203AD9001E8003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77924FF826203AD9001E8003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +73,26 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		77551EE52645721E003E8133 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				77551EE6264572C1003E8133 /* etcDataModel.swift */,
+				77551EEF2645827E003E8133 /* FriendDataModel.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		77551EE92645760E003E8133 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				77551EEA26457621003E8133 /* etcCollectionViewCell.swift */,
+				77551EEB26457621003E8133 /* etcCollectionViewCell.xib */,
+				77551EF2264582CF003E8133 /* FriendTableViewCell.swift */,
+				77551EF3264582CF003E8133 /* FriendTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		77924FEA26203AD9001E8003 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +112,8 @@
 		77924FF526203AD9001E8003 /* SOPT_WEEK1 */ = {
 			isa = PBXGroup;
 			children = (
+				77551EE92645760E003E8133 /* Cell */,
+				77551EE52645721E003E8133 /* Struct */,
 				774E4AE72632FF3F00641784 /* Extension */,
 				77924FF626203AD9001E8003 /* AppDelegate.swift */,
 				77924FF826203AD9001E8003 /* SceneDelegate.swift */,
@@ -156,7 +190,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77551EF5264582CF003E8133 /* FriendTableViewCell.xib in Resources */,
 				7792500326203ADB001E8003 /* LaunchScreen.storyboard in Resources */,
+				77551EED26457621003E8133 /* etcCollectionViewCell.xib in Resources */,
 				7792500026203ADB001E8003 /* Assets.xcassets in Resources */,
 				77924FFE26203AD9001E8003 /* Main.storyboard in Resources */,
 			);
@@ -173,11 +209,15 @@
 				77924FFB26203AD9001E8003 /* ViewController.swift in Sources */,
 				774E4AE52632FE8C00641784 /* ProfileViewController.swift in Sources */,
 				774E4ADC2632FD1900641784 /* HashViewController.swift in Sources */,
+				77551EEC26457621003E8133 /* etcCollectionViewCell.swift in Sources */,
 				774E4AE22632FD4D00641784 /* EtcViewController.swift in Sources */,
 				77924FF726203AD9001E8003 /* AppDelegate.swift in Sources */,
+				77551EF02645827E003E8133 /* FriendDataModel.swift in Sources */,
 				7792501026204D0D001E8003 /* JoinViewController.swift in Sources */,
 				774E4AE92632FF4B00641784 /* UIColor.swift in Sources */,
+				77551EE7264572C1003E8133 /* etcDataModel.swift in Sources */,
 				774E4AD92632FD0B00641784 /* MessageViewController.swift in Sources */,
+				77551EF4264582CF003E8133 /* FriendTableViewCell.swift in Sources */,
 				774E4ADF2632FD4100641784 /* ShoppingViewController.swift in Sources */,
 				77924FF926203AD9001E8003 /* SceneDelegate.swift in Sources */,
 			);
