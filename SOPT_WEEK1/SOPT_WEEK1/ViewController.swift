@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var login: UIButton!
@@ -19,9 +18,9 @@ class ViewController: UIViewController {
     @IBAction func toLogin(_ sender: UIButton) {
         if (email.text != "") && (password.text != "")
         {
-            let nextVC = self.storyboard?.instantiateViewController(identifier: "MainTabBar") as! UITabBarController
-//            nextVC.nameFrom = emailTF.text!
-            self.navigationController?.pushViewController(nextVC, animated: true)
+            let input = LoginRequest(email: email.text!, password: password.text!)
+            LoginDataManager.login(input,viewController: self)
+
         }
     }
     
@@ -59,3 +58,17 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController {
+    func didSuccessSignIn(result: LoginResponse) {
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "MainTabBar") as! UITabBarController
+//        self.navigationController?.pushViewController(nextVC, animated: true)
+        
+        self.makeAlert(title: "알림", message: result.message, okAction: {_ in     self.navigationController?.pushViewController(nextVC, animated: true)})
+        
+    }
+    
+    func failedToRequest(message: String) {
+        self.makeAlert(title: "알림", message: message)
+    }
+    
+}

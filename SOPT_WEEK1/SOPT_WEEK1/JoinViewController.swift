@@ -16,9 +16,9 @@ class JoinViewController: UIViewController {
     @IBAction func toLogin(_ sender: UIButton) {
         if (emailTF.text != "") && (pwTF.text != "") && (pwCorrectTF.text != "")
         {
-            let nextVC = self.storyboard?.instantiateViewController(identifier: "MainTabBar") as! UITabBarController
-//            nextVC.nameFrom = emailTF.text!
-            self.navigationController?.pushViewController(nextVC, animated: true)
+            let input = JoinRequest(email: emailTF.text!, password: pwTF.text!, sex: "0", nickname: "sopt", phone: "0", birth: "0")
+            JoinDataManager.join(input,viewController: self)
+            
         }
         
     }
@@ -54,4 +54,20 @@ class JoinViewController: UIViewController {
     }
     
 
+}
+
+extension JoinViewController {
+    func didSuccessSignIn(result: JoinResponse) {
+
+
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "MainTabBar") as! UITabBarController
+    
+        
+        self.makeAlert(title: "알림", message: result.message, okAction: {_ in     self.navigationController?.pushViewController(nextVC, animated: true)})
+    }
+    
+    func failedToRequest(message: String) {
+        self.makeAlert(title: "알림", message: message)
+    }
+    
 }
